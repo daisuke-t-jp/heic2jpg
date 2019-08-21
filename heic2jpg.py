@@ -33,7 +33,7 @@ if __name__ == '__main__':
         continue
         
     srcFile = os.path.join(srcDir, path)
-    dstFile = os.path.join(dstDir, path.stem + 'jpg')
+    dstFile = os.path.join(dstDir, path.stem + '.jpg')
     
     cmd = 'sips --setProperty format jpeg {0} --out {1}'.format(srcFile, dstFile)
     subprocess.call(cmd, shell=True)
